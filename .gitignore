@@ -38,3 +38,5 @@ out/
 
 # 민감정보 설정 파일 제외
 /src/main/resources/application.properties
+.env
+./smartAir/.env
