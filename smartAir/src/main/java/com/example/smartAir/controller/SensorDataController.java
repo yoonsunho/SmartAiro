@@ -5,10 +5,7 @@ import com.example.smartAir.dto.SensorDataRequest;
 import com.example.smartAir.service.SensorDataService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController // REST 컨트롤러 스프링 빈 등록
 @RequestMapping("/api/sensor-data")
@@ -29,4 +26,6 @@ public class SensorDataController {
         return ResponseEntity.ok("Data saved with id" + saved.getDataId());
 
     }
+
+
 }
